@@ -778,9 +778,10 @@
                                 <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-amber-600 transition-colors">
                                     <i data-lucide="mail" class="text-amber-500 group-hover:text-white transition-colors w-5 h-5 md:w-6 md:h-6"></i>
                                 </div>
-                                <div class="overflow-hidden">
+                                <!-- AJUSTE AQUI: truncate para ocultar excesso em ecrãs muito pequenos de forma elegante e quebra condicional (&#8203;) antes do gmail.com -->
+                                <div class="overflow-hidden min-w-0">
                                     <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">E-mail Institucional</p>
-                                    <p class="text-sm md:text-lg font-light break-all">themis.ma.consultoria@gmail.com</p>
+                                    <p class="text-sm md:text-lg font-light break-words truncate" title="themis.ma.consultoria@gmail.com">themis.ma.consultoria@&#8203;gmail.com</p>
                                 </div>
                             </div>
                         </div>
