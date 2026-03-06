@@ -586,10 +586,10 @@
     <section id="autoridade" class="py-24 bg-white border-b border-slate-100">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="bg-slate-50 rounded-[3rem] shadow-lg border border-slate-100 overflow-hidden flex flex-col md:flex-row items-center">
-                <!-- AJUSTE AQUI: Altura aumentada no mobile (h-80) e relative position ajustada -->
-                <div class="md:w-2/5 h-80 md:h-auto self-stretch relative">
+                <!-- AJUSTE AQUI: Utilização de aspect-ratio para garantir proporção de retrato no telemóvel sem cortes excessivos -->
+                <div class="w-full md:w-2/5 aspect-[4/5] md:aspect-auto md:h-auto self-stretch relative">
                     <!-- INSTRUÇÃO: Pode trocar por uma foto sua profissional aqui -->
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Especialista Responsável" class="w-full h-full object-cover object-top">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Especialista Responsável" class="w-full h-full object-cover object-[center_10%] md:object-center">
                     <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/80 via-slate-900/20 to-transparent"></div>
                 </div>
                 <div class="md:w-3/5 p-10 md:p-16">
@@ -765,22 +765,22 @@
                         <p class="text-slate-300 mb-12 leading-relaxed font-light">Atuamos em âmbito nacional. Entre em contato para diagnósticos técnicos e auditorias forenses especializadas com total confidencialidade.</p>
                         
                         <div class="space-y-10">
-                            <div class="flex gap-5 group cursor-pointer items-center">
-                                <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-amber-600 transition-colors">
-                                    <i data-lucide="phone" class="text-amber-500 group-hover:text-white transition-colors w-6 h-6"></i>
+                            <div class="flex gap-4 md:gap-5 group cursor-pointer items-center">
+                                <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-amber-600 transition-colors">
+                                    <i data-lucide="phone" class="text-amber-500 group-hover:text-white transition-colors w-5 h-5 md:w-6 md:h-6"></i>
                                 </div>
                                 <div>
                                     <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">WhatsApp Corporativo</p>
-                                    <p class="text-xl font-serif">+55 (11) 93218-6193</p>
+                                    <p class="text-lg md:text-xl font-serif">+55 (11) 93218-6193</p>
                                 </div>
                             </div>
-                            <div class="flex gap-5 group cursor-pointer items-center">
-                                <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-amber-600 transition-colors">
-                                    <i data-lucide="mail" class="text-amber-500 group-hover:text-white transition-colors w-6 h-6"></i>
+                            <div class="flex gap-4 md:gap-5 group cursor-pointer items-center">
+                                <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-amber-600 transition-colors">
+                                    <i data-lucide="mail" class="text-amber-500 group-hover:text-white transition-colors w-5 h-5 md:w-6 md:h-6"></i>
                                 </div>
-                                <div>
+                                <div class="overflow-hidden">
                                     <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">E-mail Institucional</p>
-                                    <p class="text-lg font-light">themis.ma.consultoria@gmail.com</p>
+                                    <p class="text-sm md:text-lg font-light break-all">themis.ma.consultoria@gmail.com</p>
                                 </div>
                             </div>
                         </div>
